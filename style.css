@@ -1,0 +1,99 @@
+body{
+    background: rgb(247, 250, 250) 
+}
+.box{
+    border: solid;
+    height: 160px;
+    background-color: black;
+    width:100%;
+}
+.box h1{
+    margin-left:37%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: rgb(250, 245, 244);
+    margin-bottom: 25px;
+}
+.b1{
+   display: flex;
+   justify-content: center; 
+}
+.b1 button{
+    border-radius:20px;
+    width:100px;
+    height:35px;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor:pointer;
+    background-color: rgb(244, 246, 241);
+}
+.quotebox{
+   background: #fff;
+   position: absolute;
+   width:600px;
+   border:solid;
+   top: 60%;
+   left:50%;
+   transform:translate(-50% , -50%);
+   padding: 40px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 10px 20px 0px rgb(0, 0 , 0 ,0.15);
+}
+.quotebox h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.quotebox h2::after{
+    content: ' ';
+    width: 65px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124 , 229);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quotebox blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quotebox blockquote::before , .quotebox blockquote::after{
+    content: '"';
+}
+.quotebox span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quotebox span::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: rgb(23, 124 , 229);
+    position: absolute;
+    top: 50%;
+    left: -55%;
+}
+.quotebox div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quotebox button{
+    background: rgb(23, 124 , 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124 , 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}

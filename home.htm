@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name = "viewport" content = "width=device-width ,intial-scale = 1.0">
+    <title>Quote Generator</title>
+    <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+  <div class = "box">
+    <h1> Quote Generator</h1>
+  <div class="b1">
+    <button onclick = "getquote2(api_url1)">Hindi</button>
+    <button onclick= "getquote(api_url)">English</button>
+  </div>
+  </div>  
+  <div class = "quotebox">
+    <h2>Quote</h2>
+    <blockquote id = "quote">Loading...</blockquote>
+    <span id = "author">Loading...</span>
+    <div>
+      <button onclick = "getrefresh()">Refresh</button>
+    </div>
+  </div>
+   <script src = "script.js"></script>
+</body>
+</html>
